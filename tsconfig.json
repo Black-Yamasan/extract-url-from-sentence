@@ -1,18 +1,23 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": true,
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],
-    "target": "es5",
+    "declarationDir": "dist/types",
+    "outDir": "dist/lib",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
   "include": [
-    "**/*.ts",
-    ".eslintrc"
+    "src/*.ts"
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
 }

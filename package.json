@@ -1,11 +1,26 @@
 {
   "name": "extract-url-from-sentence",
   "version": "1.0.0",
+  "description": "文章からウェブサイトURLを配列で返すライブラリ",
+  "keywords": [
+    "typescript",
+    "library"
+  ],
   "main": "index.js",
-  "repository": "git@github.com:Black-Yamasan/extract-url-from-sentence.git",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Black-Yamasan/extract-url-from-sentence.git"
+  },
   "author": "Yama",
   "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "scripts": {
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
     "example": "ts-node ./examples/example.ts",
     "test": "jest"
   },
@@ -15,6 +30,13 @@
     "@typescript-eslint/parser": "4.31.2",
     "babel-jest": "27.2.2",
     "jest": "27.2.2",
+    "lodash.camelcase": "4.3.0",
+    "rollup": "2.57.0",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-json": "4.0.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-sourcemaps": "0.6.3",
+    "rollup-plugin-typescript2": "0.30.0",
     "ts-jest": "27.0.5",
     "ts-node": "10.2.1",
     "typescript": "4.4.3"

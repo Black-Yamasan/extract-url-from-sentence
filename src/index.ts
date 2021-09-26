@@ -15,7 +15,7 @@ export const extractUrlFromSentence = (sentence: string): string[] =>
 
   // remove multi byte string
   const extractSingleByteText: string[] = urlAndEmailPatternText.map((text) => {
-    const duplicatedText = text.slice()
+    const duplicatedText: string = text.slice()
     return duplicatedText.split(/[^\x01-\x7E]/gm)
   })
     .flat()
@@ -23,16 +23,16 @@ export const extractUrlFromSentence = (sentence: string): string[] =>
 
   // remove white space and email
   const extractUrlText: string[] = extractSingleByteText.map((text) => {
-    const duplicatedText = text.slice()
+    const duplicatedText: string = text.slice()
     return duplicatedText.split(/\s/gi)
   })
     .flat()
     .filter((text) => {
-      const pattern = new RegExp(urlAndEmailRule)
+      const pattern: RegExp = new RegExp(urlAndEmailRule)
       return pattern.test(text)
     })
     .filter((text) => {
-      const emailPattern = new RegExp(emailRule)
+      const emailPattern: RegExp = new RegExp(emailRule)
       return !emailPattern.test(text)
     })
   console.log(extractUrlText)

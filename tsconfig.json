@@ -8,6 +8,7 @@
       "@/*": ["src/*"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "es6",
     "declarationDir": "dist/types",
     "outDir": "dist/lib",
     "typeRoots": [

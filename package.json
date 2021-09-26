@@ -6,7 +6,9 @@
     "typescript",
     "library"
   ],
-  "main": "index.js",
+  "main": "dist/extractUrlFromSentence.umd.js",
+  "module": "dist/extractUrlFromSentence.es5.js",
+  "typings": "dist/types/extractUrlFromSentence.d.ts",
   "files": [
     "dist"
   ],
@@ -20,7 +22,7 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts",
     "example": "ts-node ./examples/example.ts",
     "test": "jest"
   },

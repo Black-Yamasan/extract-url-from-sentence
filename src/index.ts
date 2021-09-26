@@ -35,7 +35,6 @@ export const extractUrlFromSentence = (sentence: string): string[] =>
       const emailPattern: RegExp = new RegExp(emailRule)
       return !emailPattern.test(text)
     })
-  console.log(extractUrlText)
   
   return extractUrlText 
 }

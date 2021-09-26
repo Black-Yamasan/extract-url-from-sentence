@@ -19,4 +19,10 @@ b. b6@hogedomain.com
 🐱b7@hogedomain.com🐈
 `
 
+const example2 = `
+あいうえおhttps://a1.hogedomain.com/うぇぶさいとのURL\n
+メールアドレスb1@hogedomain.com\n
+`
+
 extractUrlFromSentence(example1)
+extractUrlFromSentence(example2)

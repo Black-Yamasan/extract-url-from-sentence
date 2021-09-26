@@ -1,0 +1,8 @@
+{
+  "name": "extract-url-from-sentence",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Black-Yamasan/extract-url-from-sentence.git",
+  "author": "Yama",
+  "license": "MIT"
+}

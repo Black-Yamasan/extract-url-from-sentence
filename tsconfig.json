@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "es5",
+  },
+  "include": [
+    "**/*.ts",
+    ".eslintrc"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

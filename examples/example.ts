@@ -1,4 +1,4 @@
-import { extractUrlFromSentence } from '../src/extractUrlFromSentence'
+import extractUrlFromSentence from '../src/extractUrlFromSentence'
 
 const example1 = `
 あいうえおウェブサイトhttps://a1.hogedomain.com/\n

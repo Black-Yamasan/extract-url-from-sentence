@@ -32,5 +32,5 @@ const extractUrlFromSentence = (sentence) => {
     return extractUrlText;
 };
 
-export { extractUrlFromSentence };
+export { extractUrlFromSentence as default };
 //# sourceMappingURL=extractUrlFromSentence.es5.js.map

@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-  typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.extractUrlFromSentence = {}));
-})(this, (function (exports) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.extractUrlFromSentence = factory());
+})(this, (function () { 'use strict';
 
   const extractUrlFromSentence = (sentence) => {
       const urlAndEmailRule = /(?!.*<)([a-z0-9@/:-]{2,})([.]{1,})(.*)+[\w/]{2,}/gi;
@@ -38,9 +38,7 @@
       return extractUrlText;
   };
 
-  exports.extractUrlFromSentence = extractUrlFromSentence;
-
-  Object.defineProperty(exports, '__esModule', { value: true });
+  return extractUrlFromSentence;
 
 }));
 //# sourceMappingURL=extractUrlFromSentence.umd.js.map

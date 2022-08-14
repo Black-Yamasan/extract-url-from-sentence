@@ -1,4 +1,4 @@
-export const extractUrlFromSentence = (sentence: string): string[] =>
+const extractUrlFromSentence = (sentence: string): string[] =>
 {
   const urlAndEmailRule: RegExp = /(?!.*<)([a-z0-9@/:-]{2,})([.]{1,})(.*)+[\w/]{2,}/gi
   const emailRule: RegExp = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/gi
@@ -38,3 +38,5 @@ export const extractUrlFromSentence = (sentence: string): string[] =>
   
   return extractUrlText 
 }
+
+export default extractUrlFromSentence

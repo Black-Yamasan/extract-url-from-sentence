@@ -1,4 +1,4 @@
-import { extractUrlFromSentence } from '../src/extractUrlFromSentence'
+import extractUrlFromSentence from '../src/extractUrlFromSentence'
 
 const sampleText1 = `
 URL1つ目: https://a1.hogehoge.hoge

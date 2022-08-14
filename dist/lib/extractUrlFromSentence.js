@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.extractUrlFromSentence = void 0;
 const extractUrlFromSentence = (sentence) => {
     const urlAndEmailRule = /(?!.*<)([a-z0-9@/:-]{2,})([.]{1,})(.*)+[\w/]{2,}/gi;
     const emailRule = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/gi;
@@ -34,5 +33,5 @@ const extractUrlFromSentence = (sentence) => {
     });
     return extractUrlText;
 };
-exports.extractUrlFromSentence = extractUrlFromSentence;
+exports.default = extractUrlFromSentence;
 //# sourceMappingURL=extractUrlFromSentence.js.map

@@ -10,9 +10,9 @@ v1.0.0
 
 ### 必要要件
 
-- Node: 12系
-- npm: 6系
-- typescript: 4.4〜(本ライブラリのtypescriptのバージョンは `4.4.3`)
+- Node: 16系
+- npm: 8系
+- typescript: 4.4〜(本ライブラリのtypescriptのバージョンは `4.7.4`)
 
 ### install
 
@@ -36,7 +36,7 @@ v1.0.0
 eg. [Example Code](https://github.com/Black-Yamasan/extract-url-from-sentence/blob/main/examples/example.ts)
 
 ``` typescript
-import { extractUrlFromSentence } from 'extract-url-from-sentence'
+import extractUrlFromSentence from 'extract-url-from-sentence'
 
 const text = `
 url: https://hogehoge.hoge\n
